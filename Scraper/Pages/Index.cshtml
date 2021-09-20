@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+  ViewData["Title"] = "Home page";
+}
+
+<table>
+  <thead>
+  <th>Kod kursu</th>
+  <th>Kod grupy</th>
+  <th>Nazwa</th>
+  <th>Termin</th>
+  <th>Prowadzący</th>
+  <th>ZZU</th>
+  <th>Stacjonarne</th>
+  </thead>
+  <tbody>
+  @foreach (var entry in Model.Entries)
+  {
+    <tr>
+      <td>@entry.Code</td>
+      <td>@entry.Group</td>
+      <td>@entry.Name</td>
+      <td>@entry.Date</td>
+      <td>@entry.Lecturer</td>
+      <td>@entry.ZZU</td>
+      <td>@entry.IsStationary</td>
+    </tr>
+  }
+  </tbody>
+</table>
