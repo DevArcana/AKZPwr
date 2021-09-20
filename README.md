@@ -1,0 +1,2 @@
+# AKZPwr
+lepszy widok AKZ
